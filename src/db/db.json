@@ -1,0 +1,36 @@
+{
+    "students": [
+      {
+        "id": 1,
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "john.doe@example.com",
+        "role": "Student",
+        "city": "New York",
+        "state": "NY",
+        "code": "12345"
+      },
+      {
+        "id": 2,
+        "firstName": "Jane",
+        "lastName": "Smith",
+        "email": "jane.smith@example.com",
+        "role": "Student",
+        "city": "Los Angeles",
+        "state": "CA",
+        "code": "67890"
+      }
+    ],
+    "teachers": [
+      {
+        "id": 3,
+        "firstName": "Michael",
+        "lastName": "Johnson",
+        "email": "michael.johnson@example.com",
+        "role": "Teacher",
+        "city": "Chicago",
+        "state": "IL",
+        "code": "54321"
+      }
+    ]
+  }
