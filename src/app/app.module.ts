@@ -22,7 +22,7 @@ import { RegisterComponent } from './dashbord/register/register.component';
 import {MatRadioModule} from '@angular/material/radio';
 
 
-
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -47,7 +47,8 @@ import {MatRadioModule} from '@angular/material/radio';
     MatTableModule,
     MatInputModule,
     MatFormFieldModule,
-    MatRadioModule
+    MatRadioModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

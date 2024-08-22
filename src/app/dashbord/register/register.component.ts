@@ -3,6 +3,7 @@ import { FormGroup } from '@angular/forms';
 import { FormBuilder } from '@angular/forms';
 
 import {  Validators } from '@angular/forms';
+import { HttpService } from 'src/app/srvice/http.service';
 
 @Component({
   selector: 'app-register',
@@ -13,7 +14,7 @@ export class RegisterComponent  {
 
   registerForm !: FormGroup;
 
-  constructor(private fb: FormBuilder) {}
+  constructor(private fb: FormBuilder , ) {}
 
   ngOnInit(): void {
     this.registerForm = this.fb.group({
@@ -40,12 +41,12 @@ export class RegisterComponent  {
       code: this.registerForm.value.code,
     };
 
-    console.log(obj);
+    console.log(obj); 
 
     // if(this.registerForm.value.role === 'Student'){
-    //   this.httpService.addStudent(obj).subscribe((data)=>{
+    //   this.httpservice.addStudent(obj).subscribe((data)=>{
     //     console.log(data);
-    //   });
+    //   }); }
     // }
     // else{
     //   this.httpService.addTeacher(obj).subscribe((data)=>{
