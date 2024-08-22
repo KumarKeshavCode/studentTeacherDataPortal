@@ -1,1 +1,47 @@
-<p>register works!</p>
+<h3>kkkkkkkkkkkkkkkkkkkk</h3>
+<div class="form">
+  <div class="name">
+    <div class="fstName">
+      <label for="">First Name</label>
+    <mat-form-field class="example-full-width">
+      
+    <mat-label>First name</mat-label>
+    <input matInput>
+  </mat-form-field>
+    </div>
+
+   <div class="2ndname">
+    <label for="">Last Name</label>
+    <mat-form-field class="example-full-width">
+      <mat-label> Last Name </mat-label>
+      <input matInput>
+    </mat-form-field>
+   </div>
+
+   <div class="email">
+
+   </div>
+
+   <div class="address">
+    <label for="">Address </label>
+    <mat-form-field class="example-full-width">
+      <mat-label>City</mat-label>
+      <input matInput placeholder="Ex. San Francisco">
+    </mat-form-field>
+    <td><mat-form-field class="example-full-width">
+      <mat-label>State</mat-label>
+      <input matInput placeholder="Ex. California">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <mat-label>Postal Code</mat-label>
+      <input matInput #postalCode maxlength="5" placeholder="Ex. 94105" value="94043">
+      <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
+    </mat-form-field>
+   </div>
+
+   <div class="btn">
+    <button mat-flat-button>Submit</button>
+   </div>
+    
+  </div>
+</div>
