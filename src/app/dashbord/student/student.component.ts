@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { HttpService } from 'src/app/srvice/http.service';
 
 @Component({
   selector: 'app-student',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./student.component.scss']
 })
 export class StudentComponent {
+   studentdata : any[]= [];
+
+  constructor(private httpService: HttpService){}
+
+  ngOnInit(){
+    this.httpService. getStudents().subscribe(data => {
+      this.studentdata = data;
+    });
+  }
 
 }
