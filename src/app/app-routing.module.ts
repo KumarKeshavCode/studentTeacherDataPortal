@@ -8,35 +8,17 @@ import { CardComponent } from './dashbord/card/card.component';
 import { TeacherComponent } from './dashbord/teacher/teacher.component';
 
 const routes: Routes = [
-  {'path': 'navbar',component:NavbarComponent},
-  {'path':'register',
-        component: RegisterComponent
-  },
-  {'path':'card',
-    component: CardComponent
-},
-  {
-    'path' :'student',
-    component :StudentComponent
+  {'path': '',component: RegisterComponent,
   },
   {
-    'path' :'teacher',
-    component  :TeacherComponent
-  },
-        
-  {
-    'path':'',
+    path: 'dashboard',
     component: DashbordComponent,
-   
     children: [
-    { 'path':'register',
-        component: RegisterComponent
-    },
-    {
-      'path' :'student',
-      component :StudentComponent
-    }
-  ]
+      { path:'register', component: RegisterComponent },
+      { path:'student', component: StudentComponent },
+      { path: 'card', component: CardComponent },
+      { path: 'teacher', component: TeacherComponent }
+    ]
   }
 ];
 

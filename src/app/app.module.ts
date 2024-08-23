@@ -27,6 +27,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import {MatCardModule} from '@angular/material/card';
 import { CardComponent } from './dashbord/card/card.component';
+import { SearchPipe } from './pipes/search.pipe';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { CardComponent } from './dashbord/card/card.component';
     NavbarComponent,
     DashbordComponent,
     RegisterComponent,
-    CardComponent ,
+    CardComponent,
+    SearchPipe ,
     
     
   ],

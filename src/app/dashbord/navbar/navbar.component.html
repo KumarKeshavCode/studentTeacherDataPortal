@@ -32,9 +32,12 @@
         </div>
 
         <div class="btn">
-            <button class="studentbtn" mat-flat-button [routerLink]="['/student']">Student</button>
-            <button  class="teacherbtn" mat-flat-button [routerLink]="['/teacher']">Teacher</button>
+            <button class="studentbtn" mat-flat-button [routerLink]="['/dashboard/student']">Student</button>
+            <button  class="teacherbtn" mat-flat-button [routerLink]="['/dashboard/teacher']">Teacher</button>
         </div>
 
     </div>
 </section>
+
+<!-- 
+[(ngModel)] = "searchText" (ngModelChange)="onSearch() -->

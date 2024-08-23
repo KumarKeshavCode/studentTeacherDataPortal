@@ -1,8 +1,7 @@
 
-<p>student</p>
 
 <div  class="studentcard">
-    <div *ngFor="let student of studentdata">
+    <div *ngFor="let student of studentdata  | search:searchText">
         <app-card [userdata] ="student"></app-card>
     </div>
 </div>

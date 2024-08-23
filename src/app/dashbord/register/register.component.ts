@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 import { FormBuilder } from '@angular/forms';
-
+import { Router } from '@angular/router';
 import {  Validators } from '@angular/forms';
 import { HttpService } from 'src/app/srvice/http.service';
 
@@ -14,7 +14,7 @@ export class RegisterComponent  {
 
   registerForm !: FormGroup;
 
-  constructor(private fb: FormBuilder ,  private httpservice : HttpService) {}
+  constructor(private fb: FormBuilder ,  private httpservice : HttpService  ,private route: Router) {}
 
   ngOnInit(): void {
     this.registerForm = this.fb.group({
@@ -58,6 +58,9 @@ export class RegisterComponent  {
         console.log(data);
       });
     }
+
+    this.registerForm.reset();
+
     
   }
 

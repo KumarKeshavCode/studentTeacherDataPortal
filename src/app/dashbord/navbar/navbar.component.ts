@@ -7,9 +7,13 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
   searchInput!: string;
+  searchText!: string
 
   clearInput() : void{
     this.searchInput='';
 
+  }
+  onSearch() {
+    confirm(this.searchInput);
   }
 }
