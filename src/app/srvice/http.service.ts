@@ -23,6 +23,10 @@ export class HttpService {
   }
 
   getStudents(): Observable<any> {
+    return this.http.get(`http://localhost:3000/students`);
+  }
+
+  getTeacherData():Observable<any>{
     return this.http.get(`http://localhost:3000/teachers`);
   }
 

@@ -5,6 +5,7 @@ import { DashbordComponent } from './dashbord/dashbord.component';
 import { RegisterComponent } from './dashbord/register/register.component';
 import { StudentComponent } from './dashbord/student/student.component';
 import { CardComponent } from './dashbord/card/card.component';
+import { TeacherComponent } from './dashbord/teacher/teacher.component';
 
 const routes: Routes = [
   {'path': 'navbar',component:NavbarComponent},
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     'path' :'student',
     component :StudentComponent
+  },
+  {
+    'path' :'teacher',
+    component  :TeacherComponent
   },
         
   {

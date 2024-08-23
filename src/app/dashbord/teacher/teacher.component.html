@@ -1,1 +1,6 @@
 <p>teacher works!</p>
+<div class="tearchcard">
+    <div *ngFor ="let teacher of teacherdata">
+        <app-card [userdata] ="teacher"></app-card>
+    </div>
+</div>

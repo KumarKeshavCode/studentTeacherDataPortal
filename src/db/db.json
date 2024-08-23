@@ -19,6 +19,36 @@
       "city": "pitraa",
       "state": "",
       "code": ""
+    },
+    {
+      "id": 1724380878334,
+      "firstName": "Ritika",
+      "lastName": "negi",
+      "Email": "negi@gsy",
+      "role": "student",
+      "city": "pahar",
+      "state": "",
+      "code": ""
+    },
+    {
+      "id": 1724380881434,
+      "firstName": "Ritika",
+      "lastName": "negi",
+      "Email": "negi@gsy",
+      "role": "student",
+      "city": "pahar",
+      "state": "",
+      "code": ""
+    },
+    {
+      "id": 1724380934638,
+      "firstName": "kumar",
+      "lastName": "keshav",
+      "Email": "chirag4430@gmail.com",
+      "role": "student",
+      "city": "pahar",
+      "state": "",
+      "code": ""
     }
   ],
   "teachers": [
@@ -39,6 +69,16 @@
       "Email": "teacher#@hjk",
       "role": "teacher",
       "city": "titanium",
+      "state": "",
+      "code": ""
+    },
+    {
+      "id": 1724382483315,
+      "firstName": "keshav",
+      "lastName": "teacher",
+      "Email": "teacher@gmail.com",
+      "role": "teacher",
+      "city": "tokiyo",
       "state": "",
       "code": ""
     }
