@@ -22,7 +22,7 @@
                     <mat-form-field   appearance="outline">
     
                         <mat-icon matPrefix>search</mat-icon> 
-                      <input   matInput placeholder="Search" > 
+                      <input   class="searchbar" matInput placeholder="Search" > 
                       
                       <mat-icon matSuffix *ngIf="searchInput" (click)="clearInput()" >close</mat-icon>
     
@@ -32,7 +32,7 @@
         </div>
 
         <div class="btn">
-            <button class="studentbtn" mat-flat-button>Student</button>
+            <button class="studentbtn" mat-flat-button [routerLink]="['/student']">Student</button>
             <button  class="teacherbtn" mat-flat-button>Teacher</button>
         </div>
 

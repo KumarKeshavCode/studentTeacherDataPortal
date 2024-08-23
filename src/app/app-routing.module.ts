@@ -3,19 +3,34 @@ import { RouterModule, Routes } from '@angular/router';
 import { NavbarComponent } from './dashbord/navbar/navbar.component';
 import { DashbordComponent } from './dashbord/dashbord.component'; 
 import { RegisterComponent } from './dashbord/register/register.component';
+import { StudentComponent } from './dashbord/student/student.component';
+import { CardComponent } from './dashbord/card/card.component';
 
 const routes: Routes = [
   {'path': 'navbar',component:NavbarComponent},
   {'path':'register',
-        component: RegisterComponent},
+        component: RegisterComponent
+  },
+  {'path':'card',
+    component: CardComponent
+},
   {
-    'path':'dashboard',
+    'path' :'student',
+    component :StudentComponent
+  },
+        
+  {
+    'path':'',
     component: DashbordComponent,
    
     children: [
-    { 'path':'',
+    { 'path':'register',
         component: RegisterComponent
     },
+    {
+      'path' :'student',
+      component :StudentComponent
+    }
   ]
   }
 ];

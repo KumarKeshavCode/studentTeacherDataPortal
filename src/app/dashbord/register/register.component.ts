@@ -14,7 +14,7 @@ export class RegisterComponent  {
 
   registerForm !: FormGroup;
 
-  constructor(private fb: FormBuilder , ) {}
+  constructor(private fb: FormBuilder ,  private httpservice : HttpService) {}
 
   ngOnInit(): void {
     this.registerForm = this.fb.group({
@@ -41,18 +41,23 @@ export class RegisterComponent  {
       code: this.registerForm.value.code,
     };
 
-    console.log(obj); 
 
-    // if(this.registerForm.value.role === 'Student'){
-    //   this.httpservice.addStudent(obj).subscribe((data)=>{
-    //     console.log(data);
-    //   }); }
-    // }
-    // else{
-    //   this.httpService.addTeacher(obj).subscribe((data)=>{
-    //     console.log(data);
-    //   });
-    // }
+    // this.httpservice.addStudent(obj).subscribe((data)=>{
+    //   console.log(data);
+    // }); 
+
+    //console.log(obj); 
+
+    if(this.registerForm.value.role === 'student'){
+      console.log("student if");
+      this.httpservice.addStudent(obj).subscribe((data)=>{
+        console.log(data);
+      }); }
+      else{
+      this.httpservice.addteacher(obj).subscribe((data)=>{
+        console.log(data);
+      });
+    }
     
   }
 

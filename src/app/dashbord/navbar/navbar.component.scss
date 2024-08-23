@@ -4,14 +4,22 @@
     width: 100%;
     top: 0;
     height: 60px;
-    background-color: gray;
+    background-color: aliceblue;
+    box-shadow: black 1px 0px, black 0px 1px;
 
+
+    .searchbar{
+        width: 90%;
+    }
     .fst-col{
+        gap: 15px;
+        margin-top: 5px;
+        margin-left: -50px;
         display: flex;
-        width: 30%;
+        //width: 30%;
     }
     .col2{
-        width: 30%;
+       // width: 30%;
     }
     .btn{
         margin-top: 15px;

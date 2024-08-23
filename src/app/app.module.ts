@@ -23,6 +23,11 @@ import {MatRadioModule} from '@angular/material/radio';
 
 
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
+import {MatCardModule} from '@angular/material/card';
+import { CardComponent } from './dashbord/card/card.component';
+
 
 @NgModule({
   declarations: [
@@ -31,7 +36,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     StudentComponent,
     NavbarComponent,
     DashbordComponent,
-    RegisterComponent 
+    RegisterComponent,
+    CardComponent ,
+    
     
   ],
   imports: [
@@ -48,7 +55,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatInputModule,
     MatFormFieldModule,
     MatRadioModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule ,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
